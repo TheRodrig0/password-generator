@@ -20,14 +20,15 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 function createPasswordHandler() {
-    let length = +passwordLengthInput.value
+    const length = +passwordLengthInput.value
     const hasLowercase = lowercaseInput.checked
     const hasUppercase = uppercaseInput.checked
     const hasNumber = numbersInput.checked
     const hasSymbol = symbolsInput.checked
 
-    if (typeof length != "number" || length < 0 || length > 20) {
-        length = 20
+    if (typeof length != "number" || length < 8 || length > 20) {
+        alert("Só é possivel números ou senhas maior que sete e menor que vinte e um")
+        return
     }
 
     if (!hasLowercase && !hasUppercase && !hasNumber && !hasSymbol) {
