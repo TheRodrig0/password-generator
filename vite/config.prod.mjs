@@ -5,7 +5,6 @@ export default defineConfig({
     logLevel: 'warning',
     build: {
         outDir: 'docs',
-        minify: 'terser',
         terserOptions: {
             compress: {
                 passes: 2,
