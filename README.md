@@ -1,6 +1,7 @@
 # Gerador de Senhas
 
 Um simples gerador de senhas web construído com TypeScript e Vite.
+Inspiração Prof Isabela: https://www.youtube.com/watch?v=6M7bXwXOoMQ&list=PLLA7Fl2o0MJpvMFS9IKmk2H2HCBYioA5B
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/77f3a679-04b8-4317-b450-701faf6aa9f1" alt="Captura de tela do aplicativo Gerador de Senhas">
