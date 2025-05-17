@@ -9,6 +9,10 @@ export class GeneratePasswordUseCase {
     execute(length: number = 8): string {
         const characters: string = this.characterGenerator.generate("")
 
+        if (typeof length != "number" || length < 0 || length > 20) {
+            length = 20
+        }
+
         if (characters.length === 0) {
             alert("Selecione pelo menos uma opção")
             return ""

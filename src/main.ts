@@ -20,11 +20,15 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 function createPasswordHandler() {
-    const length = +passwordLengthInput.value
+    let length = +passwordLengthInput.value
     const hasLowercase = lowercaseInput.checked
     const hasUppercase = uppercaseInput.checked
     const hasNumber = numbersInput.checked
     const hasSymbol = symbolsInput.checked
+
+    if (typeof length != "number" || length < 0 || length > 20) {
+        length = 20
+    }
 
     if (!hasLowercase && !hasUppercase && !hasNumber && !hasSymbol) {
         alert("Selecione pelo menos uma opção")
